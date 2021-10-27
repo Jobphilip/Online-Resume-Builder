@@ -1,0 +1,299 @@
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/deci.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <p class="navd">Personal Info</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Education</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Experience</p>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <p class="navd">Skills</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Choose Template</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navs">Download</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div id="" class="hosting formc" style="background-image: url(/assets/images/per7.jpg);">
+    <div >
+        <div class="row">
+            <!-- <div class="col-md-2 overflow-auto sidebar">
+                <img src="/assets/images/newfile.png" alt="">
+            </div> -->
+            <div class="col" >
+                <div id="doc2" #doc2 class="yui-t7">
+                    <div id="inner">
+                        
+                        <div id="hd">
+                            <div class="yui-gc">
+                                <div class="yui-u first">
+                                    <img alt=""  src={{userdata.personal.imagepath}} class="img-rounded">
+                                    <h1>{{userdata.personal.firstname}} {{userdata.personal.lastname}}</h1>
+                                    <h3>{{userdata.personal.address}},{{userdata.personal.city}}-{{userdata.personal.zipcode}},{{userdata.personal.state}}</h3>
+                                </div>
+                                <div class="yui-u">
+                                    <div class="contact-info">
+                                        <h3><a href="mailto:{{userdata.personal.email}}">EMAIL : {{userdata.personal.email}}</a></h3>
+                                        <h3>PH.NO : +91 {{userdata.personal.phone}}</h3>
+                                        <h3>DOB : {{userdata.personal.pas}}</h3>
+                                    </div><!--// .contact-info -->
+                                </div>
+                            </div><!--// .yui-gc -->
+                        </div><!--// hd -->
+                    
+                        <div id="bd">
+                            <div id="yui-main">
+                                <div class="yui-b">
+
+                                    <div class="yui-gf">
+                                        <div class="yui-u first">
+                                            <h2>Profile</h2>
+                                        </div>
+                                        <div class="yui-u">
+                                            <p class="enlarge" contenteditable="true">
+                                                <!-- Progressively evolve cross-platform ideas before impactful infomediaries. Energistically
+                                                visualize tactical initiatives before cross-media catalysts for change.  -->
+                                                {{userdata.education.degre}}
+                                            </p>
+                                        </div>
+                                    </div><!--// .yui-gf -->
+
+                                    <div class="yui-gf">
+                                        <div class="yui-u first">
+                                            <h2>Experience</h2>
+                                        </div><!--// .yui-u -->
+                                        <div class="yui-u">
+                                            <div class="job">
+                                                <h2>{{userdata.experience.employer}}</h2>
+                                                <h3>{{userdata.experience.jobtitle}}</h3>
+                                                <h4>{{userdata.experience.startdate}} to {{userdata.experience.enddate}}</h4>
+                                                <p>{{userdata.experience.city}},{{userdata.experience.state}}</p>
+                                            </div>
+                                        </div><!--// .yui-u -->
+                                    </div><!--// .yui-gf -->
+                    
+                                    <div class="yui-gf">
+                                        <div class="yui-u first">
+                                            <h2>Skills</h2>
+                                        </div>
+                                        <div class="yui-u">
+                                            <div class="talent">
+                                                    <h2>{{userdata.skill.skill1}}</h2>
+                                                    <p contenteditable="true">Level: {{userdata.skill.level1}}</p>
+                                                </div>
+                    
+                                                <div class="talent">
+                                                    <h2>{{userdata.skill.skill2}}</h2>
+                                                    <p contenteditable="true">Level: {{userdata.skill.level2}}</p>
+                                                </div>
+                    
+                                                <div class="talent">
+                                                    <h2>{{userdata.skill.skill3}}</h2>
+                                                    <p contenteditable="true">Level: {{userdata.skill.level3}}</p>
+                                                </div>
+                                                <div class="talent">
+                                                    <h2>{{userdata.skill.skill4}}</h2>
+                                                    <p contenteditable="true">Level: {{userdata.skill.level4}}</p>
+                                                </div>
+                                                <div class="talent">
+                                                    <h2>{{userdata.skill.skill5}}</h2>
+                                                    <p contenteditable="true">Level: {{userdata.skill.level5}}</p>
+                                                </div>
+                                            </div>
+                                        </div><!--// .yui-gf -->          
+                    
+                                        <div class="yui-gf last">
+                                            <div class="yui-u first">
+                                                <h2>Education</h2>
+                                            </div>
+                                            <div class="yui-u">
+                                                <h2>{{userdata.education.scname}} - {{userdata.education.city}}, {{userdata.education.state}}</h2>
+                                                <h3>{{userdata.education.degree}}, {{userdata.education.study}} &mdash; Year of Passing: {{userdata.education.pass}} </h3>
+                                            </div>
+                                        </div><!--// .yui-gf -->
+
+                                        
+                    
+
+
+
+
+                                        
+                                    </div><!--// .yui-b -->
+
+                                    
+
+                                </div><!--// yui-main -->
+
+                                
+
+                            </div><!--// bd -->
+
+
+
+                            
+
+
+                    
+                            <div id="ft">
+
+                                <div class="yui-gf">
+                                    <div class="yui-u first">
+                                        <h2>Declaration</h2>
+                                    </div>
+                                    <div class="yui-u">
+                                        <p class="enlarge" contenteditable="true">
+                                            I hereby declare that the above-mentioned information is accurate to the best of my knowledge and belief.
+                                        </p>
+                                    </div>
+                                </div><!--// .yui-gf -->
+
+
+
+                                <p>{{userdata.personal.firstname}} {{userdata.personal.lastname}} &mdash; <a href="mailto:{{userdata.personal.email}}">{{userdata.personal.email}}</a> &mdash; +91 {{userdata.personal.phone}}</p>
+                           
+                                <qr-code value="{{userdata.experience.video}}"></qr-code>
+                                <p style="font-weight: bold;margin-left: 2%;">Note : Scan this QR code to see more ABOUT ME</p>
+                            </div><!--// footer -->
+                    
+                        </div><!-- // inner -->
+                    
+                    
+                    </div><!--// doc -->
+
+
+                    
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="web_hosting">
+                    <div class="formnav">
+                        <a routerLink="/selecttemplate">previous</a>
+                        <a (click)="removeuser(); save();">download</a>
+                    </div>
+                    <div class="formnav">
+                        <a href="/userhome">exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new platform and updates.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Resume Guy</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <li><a href="#">ios App</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">My tasks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400">© decimal Inc.. 2021 All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-sm-5 text-right">
+                    <p>Made with <i class="fa fa-heart"></i> in <a href="#">Decimal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

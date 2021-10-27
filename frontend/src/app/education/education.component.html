@@ -1,0 +1,218 @@
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/deci.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <p class="navd">Personal Info</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navs">Education</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Experience</p>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <p class="navd">Skills</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Choose Template</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Download</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div id="" class="hosting formc" style="background-image: url(/assets/images/per3.jpg);">
+    <div class="formside">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="formpage top">
+                    <form class="topcolor" [formGroup]="educationform" (ngSubmit)="addeducation()">
+                    <h2>Education Details</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>School/College Name</label>
+                                <input type="text" name="scname" class="form-control" placeholder="School/College Name" formControlName="scname" [(ngModel)]="educationdetails.scname">
+                            </div>
+                            <div class="col-md-6">
+                                <label>City</label>
+                                <input type="text" name="city" class="form-control" placeholder="City" formControlName="city" [(ngModel)]="educationdetails.city">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>State</label>
+                                <input type="text" name="state" class="form-control" placeholder="State" formControlName="state" [(ngModel)]="educationdetails.state">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Select the Degree</label>
+                                <select class="form-select" name="degree" aria-label="Default" formControlName="degree" [(ngModel)]="educationdetails.degree">
+                                    <option selected disabled>-select-</option>
+                                    <option value="Bachelor of Arts">Bachelor of Arts</option><option value="Bachelor of Science">Bachelor of Science</option><option value="Bachelor of Commerce">Bachelor of Commerce</option>
+                                    <option value="Bachelor of Engg./Tech">Bachelor of Engg./Tech</option><option value="BMS/BBA/BBS">BMS/BBA/BBS</option><option value="Bachelor of Law">Bachelor of Law</option>
+                                    <option value="Bachelor of Medicine (MBBS)">Bachelor of Medicine (MBBS)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Field of Study</label>
+                                <input type="text" name="study" class="form-control" placeholder="eg. Engineering" formControlName="study" [(ngModel)]="educationdetails.study">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Month & year of Pass</label>
+                                <input type="month" name="pass" class="form-control" formControlName="pass" [(ngModel)]="educationdetails.pass">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                        <div class="col-md-6">
+                            <label>Objective</label>
+                            <select class="form-select" name="degre" aria-label="Default" formControlName="degre" [(ngModel)]="educationdetails.degre">
+                                <option selected disabled>-select-</option>
+                                <option value="To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills">To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</option>
+                                <option value="Eager to expand my skill set through external trainings to help boost all major front desk KPIs.">Eager to expand my skill set through external trainings to help boost all major front desk KPIs.</option>
+                                <option value="Seeking a challenging career with an MNC.">Seeking a challenging career with an MNC. </option>
+                                <option value="To secure employment with a reputable company, where I can utilize my skills and business studies background to the maximum">To secure employment with a reputable company, where I can utilize my skills and business studies background to the maximum.</option>
+                                <option value="To explore new areas of work in a dynamically stable organisation."> To explore new areas of work in a dynamically stable organisation. </option>
+                                <option value="A highly organized and hard-working individual looking for a responsible position to gain practical experience.">A highly organized and hard-working individual looking for a responsible position to gain practical experience.</option>
+                                <option value="To make use of my interpersonal skills to achieve goals of a company that focuses on customer satisfaction and customer experience.">To make use of my interpersonal skills to achieve goals of a company that focuses on customer satisfaction and customer experience.</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+                        <div #saved class="show">
+                            <input type="submit" name="submit" [disabled]="educationform.invalid" value="save">
+                            <div *ngIf="educationform.invalid">
+                                *all the field should be filled.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="web_hosting">
+                    <div class="formnav">
+                        <a routerLink="/personalinfo">previous</a>
+                        <a routerLink="/experience">next</a>
+                    </div>
+                    <div class="formnav">
+                        <a href="/userhome">exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new platform and updates.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Resume Guy</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <li><a href="#">ios App</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">My tasks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400">© decimal Inc.. 2021 All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-sm-5 text-right">
+                    <p>Made with <i class="fa fa-heart"></i> in <a href="#">Decimal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

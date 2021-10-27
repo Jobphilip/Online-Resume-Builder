@@ -1,0 +1,263 @@
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                    <div class="full">
+                        <div class="center-desk">
+                            <div class="logo">
+                                <img src="/assets/images/deci.png"  width="50%" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                    <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <p class="navd">Personal Info</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Education</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Experience</p>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <p class="navs">Skills</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Choose Template</p>
+                                </li>
+                                <li class="nav-item">
+                                    <p class="navd">Download</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header inner -->
+<!-- end header -->
+
+<!-- Hosting -->
+<div id="" class="hosting formc" style="background-image: url(/assets/images/per3.jpg);">
+    <div class="formside">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="formpage top">
+                    <form class="topcolor" [formGroup]="skillform" (ngSubmit)="addskill()">
+                        <h2>Skills</h2>
+                        <div class="row" id="skill1">
+                            <div class="col-md-5">
+                                <label>Skill</label>
+                                <input type="text" name="skill1" class="form-control" placeholder="Skill" formControlName="skill1" [(ngModel)]="skilldetails.skill1">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Level</label>
+                                <select class="form-select" aria-label="Default" name="level1" formControlName="level1" [(ngModel)]="skilldetails.level1">
+                                    <option selected disabled>-select level-</option>
+                                    <option value="&#9733;">&#9733;</option>
+                                    <option value="&#9733;&#9733;">&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="fa fa-trash-o w3-xlarge topbutton" onclick="remove('skill1');"></button>
+                            </div>
+                        </div>
+                        <div class="row" id="skill2">
+                            <div class="col-md-5">
+                                <label>Skill</label>
+                                <input type="text" name="skill2" class="form-control" placeholder="Skill" formControlName="skill2" [(ngModel)]="skilldetails.skill2">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Level</label>
+                                <select class="form-select" aria-label="Default" name="level2" formControlName="level2" [(ngModel)]="skilldetails.level2">
+                                    <option selected disabled>-select level-</option>
+                                    <option value="&#9733;">&#9733;</option>
+                                    <option value="&#9733;&#9733;">&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="fa fa-trash-o w3-xlarge topbutton" onclick="remove('skill2');"></button>
+                            </div>
+                        </div>
+                        <div class="row" id="skill3">
+                            <div class="col-md-5">
+                                <label>Skill</label>
+                                <input type="text" name="skill3" class="form-control" placeholder="Skill" formControlName="skill3" [(ngModel)]="skilldetails.skill3">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Level</label>
+                                <select class="form-select" name="level3" aria-label="Default" formControlName="level3" [(ngModel)]="skilldetails.level3">
+                                    <option selected disabled>-select level-</option>
+                                    <option value="&#9733;">&#9733;</option>
+                                    <option value="&#9733;&#9733;">&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="fa fa-trash-o w3-xlarge topbutton" onclick="remove('skill3');"></button>
+                            </div>
+                        </div>
+                        <div class="row" id="skill4">
+                            <div class="col-md-5">
+                                <label>Skill</label>
+                                <input type="text" name="skill4" class="form-control" placeholder="Skill" formControlName="skill4" [(ngModel)]="skilldetails.skill4">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Level</label>
+                                <select class="form-select" name="level4" aria-label="Default" formControlName="level4" [(ngModel)]="skilldetails.level4">
+                                    <option selected disabled>-select level-</option>
+                                    <option value="&#9733;">&#9733;</option>
+                                    <option value="&#9733;&#9733;">&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="fa fa-trash-o w3-xlarge topbutton" onclick="remove('skill4');"></button>
+                            </div>
+                        </div>
+                        <div class="row" id="skill5">
+                            <div class="col-md-5">
+                                <label>Skill</label>
+                                <input type="text" name="skill5" class="form-control" placeholder="Skill" formControlName="skill5" [(ngModel)]="skilldetails.skill5">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Level</label>
+                                <select class="form-select" name="level5" aria-label="Default" formControlName="level5" [(ngModel)]="skilldetails.level5">
+                                    <option selected disabled>-select level-</option>
+                                    <option value="&#9733;">&#9733;</option>
+                                    <option value="&#9733;&#9733;">&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;</option>
+                                    <option value="&#9733;&#9733;&#9733;&#9733;&#9733;">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="fa fa-trash-o w3-xlarge topbutton" onclick="remove('skill5');"></button>
+                            </div>
+                        </div>
+                        <div #saved class="show">
+                            <input type="submit" name="submit" value="save">
+                            <div>
+                                *all the field should be filled or delete it. 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="web_hosting">
+                    <div class="formnav">
+                        <a routerLink="/experience">previous</a>
+                        <a routerLink="/selecttemplate">next</a>
+                    </div>
+                    <div class="formnav">    
+                        <a href="/userhome">exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Hosting -->
+
+<!--  footer -->
+
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p>Don’t miss any updates of our new platform and updates.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">Resume Guy</a></li>
+                            <li><a href="#">Android App</a></li>
+                            <li><a href="#">ios App</a></li>
+                            <li><a href="#">Desktop</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">My tasks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg">
+            <div class="footer_bg_one"></div>
+            <div class="footer_bg_two"></div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-7">
+                    <p class="mb-0 f_400">© decimal Inc.. 2021 All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-sm-5 text-right">
+                    <p>Made with <i class="fa fa-heart"></i> in <a href="#">Decimal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->

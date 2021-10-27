@@ -1,0 +1,720 @@
+
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.80857;
+    font-weight: normal;
+}
+
+a{
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+button:focus {
+    outline: none;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ :focus {
+    outline: 0;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid #ddd;
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767676;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+    border: none !important;
+}
+
+.badge {
+    font-weight: 500;
+}
+
+blockquote {
+    margin: 20px 0 20px;
+    padding: 30px;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.layout_padding_2 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.light_silver {
+    background: #f9f9f9;
+}
+
+.theme_bg {
+    background: #38c8a8;
+}
+
+.margin_top_30 {
+    margin-top: 30px !important;
+}
+
+.full {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+/**-- heading section --**/
+
+
+/*---------------------------- preloader area ----------------------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 280px;
+}
+
+
+/*-- navigation--*/
+
+.navigation.navbar {
+    float: right;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0 25px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fdd430;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fdd430;
+}
+
+
+/*-- header area --*/
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+.header {
+    background: #1F2833;
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+}
+.banner_main {
+    background: #3AAFA9;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+.text-bg h1 {
+    color: #17252A;
+    font-size: 80px;
+    line-height: 90px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+.text-bg{
+    margin-top: 5em;
+}
+.text-bg span {
+    color: #C3073F;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: bold;
+
+}
+
+.text-bg p {
+    color: #1C3334;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 40px 0;
+}
+.text-bg a {
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5em;
+}
+
+.text-bg a:hover {
+    background-color: #1C3334;
+    color: #fff;
+}
+
+.text-img figure {
+    margin: 0px 160px 0px 160px;
+}
+
+.text-img figure img {
+    width: 100%;
+}
+
+.titlepage {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    font-size: 30px;
+    color: #0c0f38;
+    line-height: 10px;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+/** Hosting section **/
+
+.hosting {
+    background: #3AAFA9;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+}
+
+.web_hosting {
+    text-align: center;
+}
+
+.web_hosting figure {
+    margin: 0;
+}
+
+/** end Hosting section **/
+
+
+/** footer **/
+
+.footer {
+    font-family: Poppins;
+    background: #3AAFA9;
+}
+
+.cont {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.cont span {
+    color: #fff;
+    font-size: 20px;
+    line-height: 5px;
+    padding: 30px 0px 30px 0px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cont p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0 130px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+     padding: 10px 0px;
+     background: #fff;
+}
+
+.copyright p {
+    color: #1e1e1e;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+}
+
+/** end footer **/
+
+/* signin & signup */
+.sign-in{
+    margin-top: 32.5em;
+    font-family: sans-serif;
+}
+.box{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate(-50%,-50%);
+    background: white;
+    text-align: center;
+    border-radius: 3em;
+    margin-left: 20em;
+    margin-top: 2em; 
+}
+.box h1{
+    color: #0c0f38;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box input[type = "email"],.box input[type = "password"],.box input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #0c0f38;
+    padding: 8px 4px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-weight: bold;
+    font-size: 18px;
+}
+.box input[type = "email"]:focus,.box input[type = "password"]:focus,.box input[type = "text"]:focus{
+    width: 280px;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 8px 40px;
+    width: 200;
+    outline: none;
+    color: #0c0f38;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+.line{
+    margin-top: 12em;
+}
+.line p{
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+.line a{
+    font-size: large;
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px 6px;
+    width: 150px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.line a:hover{
+    width: 200px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+/* end of signin & signup */
+
+/* admin login */
+.boxx{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate(-50%,-50%);
+    background: black;
+    text-align: center;
+    border-radius: 3em;
+    margin-left: 20em;
+}
+.boxx h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.boxx input[type = "email"],.boxx input[type = "password"],.boxx input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 8px 4px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 18px;
+}
+.boxx input[type = "email"]:focus,.boxx input[type = "password"]:focus,.boxx input[type = "text"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.boxx input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 8px 40px;
+    width: 200;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+.boxx input[type = "submit"]:hover{
+    background: #2ecc71;
+    color: black;
+}
+/* end of admin login */
+
+/* userhome */
+.drop{
+    border: 1px solid white;
+    padding: 0px 25px;
+    border-radius: 1em;
+    color: white;
+    background: #0c0f38;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.copyrightuser {
+    padding: 10px 0px;
+    background: #0c0f38;
+}
+
+.copyrightuser p {
+   color: white;
+   font-size: 18px;
+   line-height: 10px;
+   text-align: center;
+}
+.userhome{
+    display: flex;
+    padding: 10% 0% 0% 35%;
+}
+.userhome a:hover{
+    background: rgba(0, 0, 0, 0.384);
+    border-radius: 2em;
+}
+.usericons{
+    display: contents;  
+}
+/* end of userhome */
+
+/* createresume */
+.navs{
+    color: white;
+    border: 2px solid white;
+    padding: 10px 6px;
+    border-radius: 2em;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 1em;
+    background: #fdd430;
+    text-align: center;
+}
+.navd{
+    color: white;
+    border-radius: .4em;
+    padding: 10px 6px;
+    margin-left: 1em;
+    background: #1F2833;
+    text-align: center;
+}
+/* end of createresume */
+/* resumeform */
+.formnav{
+    display: flex;
+    margin-bottom: 3em;
+}
+.formnav a,.formnav button{
+    font-size: large;
+    border:0;
+    background: none;
+    margin: 1px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 6px 1px;
+    width: 120px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.formnav a:hover,.formnav button:hover{
+    background: #fdd430;
+    color: white;
+    font-weight: 500;
+}
+.formpage {
+    text-align: left;
+    padding-bottom: 60px;
+}
+.formpage label{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.formpage h2 {
+    font-size: 30px;
+    color: #0c0f38;
+    line-height: 10px;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+}
+.topbutton{
+    border: transparent;
+    background: transparent;
+    margin-top: 1.2em;
+    color: white;
+}
+.topbutton:hover{
+    color: rgba(255, 0, 0, 0.623);
+}
+.formside{
+    padding: 0% 20% 0% 20%;
+}
+/* end of resume form  */
+/* success message */
+.successimg{
+    padding: 20% 20% 20% 20%;
+}
+.buttoncont{
+    border: 2px solid #528818;
+    padding: 3% 5% 3% 5%;
+    font-size: large;
+    background: #528818;
+    font-weight: bold;
+    border-radius: 2em;
+    color: white;
+}
+.buttoncont:hover{
+    background: transparent;
+    color: #528818;
+}
+/* end of Success message */
+
+
+
